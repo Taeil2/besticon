@@ -31,8 +31,8 @@ func setupResponse(w *http.ResponseWriter, req *http.Request) {
 }
 
 func indexHandler(w http.ResponseWriter, r *http.Request) {
-	setupResponse(&w, req)
-	if (*req).Method == "OPTIONS" {
+	setupResponse(&w, r)
+	if (*r).Method == "OPTIONS" {
 			return
 	}
 
